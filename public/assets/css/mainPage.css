@@ -1,0 +1,28 @@
+#graphCanvas{
+  display:block;
+  border-style: solid;
+}
+#title{
+  text-align: center;
+}
+.headerSpace{
+  padding-left: 15px;
+}
+.commentID{
+  font-size: 25px;
+  margin-left:2%;
+}
+.commentBox{
+  resize: none;
+  width:90%;
+  height: 50px;
+  font-size: 20px;
+  border: solid;
+  padding: 10px;
+}
+#numberOfCriteria_inputBox{
+  width: 50px;
+}
+#title_inputBox{
+  width: 100px;
+}

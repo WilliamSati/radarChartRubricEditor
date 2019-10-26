@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <button id="homeButton">Home</button>
+  <strong><h1>Problems and Questions</h1></strong>
+  <h2>The graph is fuzzy on the pdf</h2>
+  <p>Try and put the website in full screen-mode on a computer before downloading it as a pdf.</p>
+  <h2> What do the values on this graph represent? </h2>
+  <p>The point of this graph is to communicate to your student the areas that they did well in and areas that they need to improve in
+    for next time. There are no real numbers attatched to the graph values, they are just meant to reflect what you as the marker
+    thought about each section. You can think about the dotted line as 'meets expectations' and anything above that line means they
+    did well on that section and anything below that line means they need to improve for next time.</p>
+  <h2> How do I use this thing? </h2>
+  <p> Try and hover you mouse of the graph and see what happens! Once you have the dot in the right place, click with you mouse to fix the point in place.
+     If you mess up, you can always change a value again by clicking on a different spot on the line or by using the 'reset graph' button. You can change
+     certain aspects of the graph using the options on the top of the page.</p>
+  <h2>I broke it </h2>
+  <p> Hmmm... Tell the professor, they will tell me and I will fix it. </p>
+</body>
+<script>
+  var homeButton = document.getElementById('homeButton');
+  homeButton.addEventListener('click',function(){
+    window.location.href="https://radarchartrubriceditor-42144.firebaseapp.com/mainPage";
+  });
+</script>
+
+</html>

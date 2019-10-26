@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- css file -->
+    <link href="assets/css/mainPage.css" rel="stylesheet" type="text/css" />
+  <!-- jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+  <!-- jQuery file input tag modifyier -->
+    <script src="assets/javascript/jquery-input-file-text.js"></script>
+</head>
+<body>
+  <div class="header">
+    <span class="headerText">Number of criteria:</span> <input type="number" id="numberOfCriteria_inputBox"><input type="submit" id="numberOfCriteria_submitButton">
+    <span class="headerSpace"></span>
+    <span class="headerText">Team Number:</span> <input type="text" id="title_inputBox"><input type="submit" id="title_submitButton">
+    <span class="headerSpace"></span>
+    <button id="helpButton">Help!</button>
+    <span class="headerSpace"></span>
+    <button id="convertToPDF">Save as PDF</button>
+    <span class="headerSpace"></span>
+    <button id="resetButton">Reset Graph</button>
+    <span class="headerSpace"></span>
+    <button id="saveProgress">Save Progress</button>
+    <span class="headerSpace"></span>
+    <input type="file" id="restoreProgress" name="prevProgress" accept=".txt">
+  </div>
+
+  <hr>
+
+  <div id="pdfContent">
+    <h1 id="title">Team Number</h1>
+
+    <canvas id="graphCanvas">
+    </canvas>
+
+    <div id="commentSection">
+      <h1 id="commentsTitle">Comments</h1><br>
+      <div id="commentList">
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="assets/javascript/classesAndGlobalVariables.js"></script>
+<script src="assets/javascript/FileSaver.js"></script>
+<script src="assets/javascript/canvasInteraction.js"></script>
+<script src="assets/javascript/objectManipulation.js"></script>
+<script src="assets/javascript/commentInteraction.js"></script>
+<script src="assets/javascript/renderPDF.js"></script>
+<script src="assets/javascript/mainPage.js"></script>
+<script src="assets/javascript/saveRestoreProgress.js"></script>
+<script>
+  //style the page
+  $(document).ready(function() {
+      $('#restoreProgress').inputFileText( { text: 'Restore Progress' } );
+  });
+</script>
+</html>
