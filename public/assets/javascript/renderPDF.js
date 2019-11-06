@@ -66,7 +66,8 @@ convertToPDF.addEventListener('click', function(){
     }
     startingHeight+=1.5*lineHeight;
   }
-  pdf.save('test.pdf');
+
+  pdf.save(pageTitle.innerHTML);
 });
 
 /*
